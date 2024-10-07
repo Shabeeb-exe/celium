@@ -79,11 +79,12 @@ h1{
  }
  .services {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center; /* Center the containers horizontally */
     flex-wrap: wrap;
     gap: 20px;
     margin: 20px auto;
-    width: 90%;
+    width: 90%; 
+    max-width: 1200px; /* Optional: restrict total width */
 }
 
 .container {
@@ -97,6 +98,7 @@ h1{
     height: auto;
     border-radius: 20px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .container h2, .container p {
@@ -112,3 +114,87 @@ h1{
     display: block;
     margin: 0 auto;
 }
+
+.contact {
+    text-align: center;
+    background: aqua url(../images/1738.jpg) center no-repeat;
+    background-size:100% auto;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact h1, .contact p {
+    text-align: center;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.contact p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact img{
+    width: 100px;
+
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.socials a {
+    width: 80px;
+    height: 80px;
+    background-color: #2d1919;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    object-fit: contain;
+}
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+.copyright p {
+    color: #555;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .main{
+        width:100%;
+    }
+    .container {
+
+        width: 50%;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .about {
+        background-color: #99272d;
+    }
+    .container {
+
+        width: 100%;
+    }
+  }
+
+ 
